@@ -1,0 +1,62 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+          {
+            "internalType": "bytes",
+            "name": "arg",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "sig",
+            "type": "bytes"
+          }
+        ],
+        "name": "createToken",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "name": "funds",
+            "type": "uint256"
+          },
+          {
+            "name": "minAmount",
+            "type": "uint256"
+          }
+        ],
+        "name": "buyTokenAMAP",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "sellToken",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
