@@ -1,10 +1,13 @@
 {
   "name": "bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index.js",
-    "start:blox": "node index.blox.js"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:blox": "node dist/index.blox.js",
+    "dev": "ts-node src/index.blox.ts",
+    "dev:blox": "ts-node src/index.blox.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +19,11 @@
     "ethers": "^6.13.5",
     "prompt-sync": "^4.2.0",
     "viem": "^2.38.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }
