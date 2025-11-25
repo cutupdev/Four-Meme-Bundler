@@ -5,6 +5,4 @@ node_modules
 dist
 build
 test-ledger
-*.log
-.idea
-.vscode
+

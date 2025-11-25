@@ -1,0 +1,24 @@
+[package]
+name = "rwa-tokenization"
+version = "0.1.0"
+description = "Real World Assets Tokenization on Solana"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "rwa_tokenization"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { version = "0.30.1", features = ["init-if-needed"]}
+anchor-spl = { version = "0.30.1", features = ["metadata", "token_2022_extensions"]}
+solana-program = "1.18.18"
+spl-token = "=4.0.3"
+
